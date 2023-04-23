@@ -1,16 +1,18 @@
 package model;
 
-public class Taxi {
+public class Taxi extends Auto{
 	String marke;
 	int vorschaeden;
 	
 	public Taxi(String marke, int vorschaeden) {
-		super();
+		super(0);
 		this.marke = marke;
 		this.vorschaeden = vorschaeden;
 	}
 	
-	public Taxi() {}
+	public Taxi() {
+		super(0);
+	}
 
 	public String getMarke() {
 		return marke;
